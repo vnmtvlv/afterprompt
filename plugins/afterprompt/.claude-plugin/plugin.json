@@ -1,0 +1,11 @@
+{
+  "name": "afterprompt",
+  "displayName": "AfterPrompt",
+  "version": "0.1.1",
+  "description": "A tiny physics game pops up when your agent takes longer than a minute, and closes when it's done.",
+  "author": {
+    "name": "inchi.dev"
+  },
+  "homepage": "https://afterprompt.inchi.dev/goo",
+  "hooks": "./hooks/hooks.json"
+}

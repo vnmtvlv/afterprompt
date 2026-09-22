@@ -1,0 +1,65 @@
+{
+  "description": "AfterPrompt lifecycle hooks for Codex.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook start --agent codex",
+            "async": true,
+            "statusMessage": "Starting the AfterPrompt timer"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
+            "timeout": 10,
+            "statusMessage": "Closing AfterPrompt"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
+            "timeout": 10,
+            "statusMessage": "Closing AfterPrompt"
+          }
+        ]
+      }
+    ],
+    "Interrupt": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
+            "timeout": 3,
+            "statusMessage": "Closing AfterPrompt"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
+            "timeout": 3,
+            "statusMessage": "Closing AfterPrompt"
+          }
+        ]
+      }
+    ]
+  }
+}

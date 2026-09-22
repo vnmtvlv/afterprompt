@@ -1,0 +1,20 @@
+{
+  "name": "inchi",
+  "interface": {
+    "displayName": "Inchi"
+  },
+  "plugins": [
+    {
+      "name": "afterprompt",
+      "source": {
+        "source": "local",
+        "path": "./plugins/afterprompt"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
