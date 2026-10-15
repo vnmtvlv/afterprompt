@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "afterprompt",
-  "version": "0.1.1",
-  "description": "A tiny physics game pops up when your coding agent takes longer than a minute, and closes when it is done.",
+  "version": "0.2.0",
+  "description": "A notification or a tiny physics game while your coding agent works, and a note when it is done.",
   "author": {
     "name": "inchi.dev",
     "url": "https://inchi.dev"
@@ -15,11 +15,11 @@
       "hooks": "./hooks/codex.json",
       "interface": {
         "displayName": "AfterPrompt",
-        "shortDescription": "Tiny games while Codex works",
-        "longDescription": "Opens a small game after Codex has been working for a minute, then closes it when Codex finishes or needs you.",
+        "shortDescription": "Play while Codex works",
+        "longDescription": "After Codex has been working for a minute, posts a notification that opens a small game, or opens the game directly. Tells you when Codex finishes or needs you.",
         "developerName": "inchi.dev",
         "category": "Productivity",
-        "capabilities": ["Run local lifecycle hooks", "Open a browser window"],
+        "capabilities": ["Run local lifecycle hooks", "Open a browser window", "Post a local notification"],
         "websiteURL": "https://afterprompt.inchi.dev",
         "privacyPolicyURL": "https://afterprompt.inchi.dev/privacy",
         "termsOfServiceURL": "https://afterprompt.inchi.dev/terms",
