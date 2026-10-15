@@ -8,7 +8,7 @@
             "type": "command",
             "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook start --agent codex",
             "async": true,
-            "statusMessage": "Starting the AfterPrompt timer"
+            "statusMessage": "AfterPrompt is timing this turn"
           }
         ]
       }
@@ -20,7 +20,7 @@
             "type": "command",
             "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
             "timeout": 10,
-            "statusMessage": "Closing AfterPrompt"
+            "statusMessage": "AfterPrompt is closing the game"
           }
         ]
       }
@@ -32,7 +32,7 @@
             "type": "command",
             "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
             "timeout": 10,
-            "statusMessage": "Closing AfterPrompt"
+            "statusMessage": "AfterPrompt: your agent needs you"
           }
         ]
       }
@@ -44,7 +44,7 @@
             "type": "command",
             "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
             "timeout": 3,
-            "statusMessage": "Closing AfterPrompt"
+            "statusMessage": "AfterPrompt is closing the game"
           }
         ]
       }
@@ -56,7 +56,7 @@
             "type": "command",
             "command": "sh \"${PLUGIN_ROOT}/scripts/afterprompt.sh\" hook stop --agent codex",
             "timeout": 3,
-            "statusMessage": "Closing AfterPrompt"
+            "statusMessage": "AfterPrompt is closing the game"
           }
         ]
       }
